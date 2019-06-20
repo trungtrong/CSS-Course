@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Bai 2 CSS Styling</title>
+
+<!-- Method 1: import an external font -->
+<!-- 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">  -->
+		<style>
+			/*Method 2:*/
+			@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+			.div-size {
+				font-size: 4em;
+			}
+			.f-size-ex {
+				font-size: 2ex;  /*depending on <html> font size, not div-size */
+			}
+
+			.f-size-viewport-vw {
+				font-size: 10vw;
+			}
+
+			.f-size-viewport-vh {
+				font-size: 25vh;
+			}	
+		</style>
+	</head>
+
+	<body>
+		<h1>Bai 2-3 CSS Fonts</h1>
+		<h3>2-3-4. font-size property</h3>
+			<p class="f-size-ex">Hello</p>
+			<p class="f-size">Hello</p>
+		
+		<p class="f-size-viewport-vw">Hello</p>
+
+		<p class="f-size-viewport-vh">Hello</p>
+		
+	</body>
+</html>
