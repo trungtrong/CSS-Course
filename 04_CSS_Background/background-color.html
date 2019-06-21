@@ -1,0 +1,88 @@
+<!-- ---------------------------------------- -->
+<!-- "border-radius" property -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Bai5. CSS Background </title>
+		<style type="text/css">
+			body {
+				background-color: purple;
+			}
+
+			.b-color-name {
+				border: 5px solid tomato;
+				padding-left: 10px;
+				border-radius: 20px;
+				margin-bottom: 20px;
+				background-color: transparent;
+			}
+
+			.b-color {
+				border: 5px solid tomato;
+				padding-left: 10px;
+				border-radius: 20px;
+				margin-bottom: 20px;
+				
+				background-color: #575757;
+			}
+
+			.b-transparent {
+				border: 5px solid tomato;
+				padding-left: 10px;
+				border-radius: 20px;
+				margin-bottom: 20px;
+				
+				background-color: transparent;
+			}
+
+			.b-current-color {
+				border: 5px solid tomato;
+				padding-left: 10px;
+				border-radius: 20px;
+				margin-bottom: 20px;
+				
+				color: red;
+				background-color: currentColor;
+			}
+
+			.b-gradient {
+				border: 5px solid tomato;
+				padding-left: 10px;
+				border-radius: 20px;
+				margin-bottom: 20px;
+				
+				background: rgb(133,43,161);
+				background: linear-gradient(90deg, rgba(133,43,161,1) 0%, rgba(75,10,173,1) 60%, rgba(46,196,227,1) 100%);
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<h1>5-1. "background-color" property</h1>
+		
+		<div class="b-color-name">
+			<p>Hello Ajinomoto</p>
+		</div>
+
+		<div class="b-color">
+			<p>Hello Ajinomoto</p>
+		</div>
+
+		<div class="b-transparent">
+			<p>Hello Ajinomoto</p>
+		</div>
+
+		<div class="b-current-color">
+			<p>Hello Ajinomoto</p>
+		</div>		
+
+		<div class="b-gradient">
+			<p>Hello Ajinomoto</p>
+		</div>	
+
+	</body>
+</html>

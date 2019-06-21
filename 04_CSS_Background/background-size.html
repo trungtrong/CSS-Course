@@ -1,0 +1,88 @@
+<!-- ---------------------------------------- -->
+<!-- "border-size" property -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Bai5. CSS Background </title>
+		<style type="text/css">
+
+			.list-item {
+				border: 1px solid transparent;
+				border-radius: 20px;
+				padding-left: 20px;
+				margin-bottom: 20px;
+				height: 200px;
+
+			}
+
+			.contain-size {
+				background-image: url(images/city-in-night.jpg);
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			
+			.cover-size {
+				background-image: url(images/city-in-night.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+			.auto-size {
+				background-image: url(images/city-in-night.jpg);
+				background-repeat: no-repeat;
+				background-size: auto;
+			}
+
+			.one-value {
+				background-image: url(images/city-in-night.jpg);
+				background-repeat: no-repeat;
+				background-size: 300px;
+			}
+
+			.two-value {
+				background-image: url(images/city-in-night.jpg);
+				background-repeat: no-repeat;
+				background-size: 300px 100px;
+			}
+
+			.multiple-value {
+				background-image: url(images/city-in-night.jpg);
+				background-repeat: no-repeat;
+				background-size: 300px 200px, cover;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<h1>5-5. "background-size" property</h1>
+		
+		<div class="list-item contain-size">
+			<p>Hello Ajinomoto-contain</p>
+		</div>
+
+		<div class="list-item cover-size">
+			<p>Hello Ajinomoto-cover</p>
+		</div>
+
+		<div class="list-item auto-size">
+			<p>Hello Ajinomoto-auto</p>
+		</div>
+
+		<div class="list-item one-value">
+			<p>Hello Ajinomoto-one-value</p>
+		</div>
+
+		<div class="list-item two-value">
+			<p>Hello Ajinomoto-two-value</p>
+		</div>
+
+		<div class="list-item multiple-value">
+			<p>Hello Ajinomoto-multiple-value</p>
+		</div>
+
+	</body>
+</html>
