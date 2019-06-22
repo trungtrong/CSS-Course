@@ -1,0 +1,27 @@
+.unordered-list {
+	list-style-type: disc;
+}
+
+.ordered-list {
+	list-style-type: decimal;
+}
+
+.image-marker {
+	list-style-image: url('https://mdn.mozillademos.org/files/11981/starsolid.gif');
+}
+
+/****************/
+.item-table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 50%;
+}
+
+.inside-marker {
+	list-style-position: inside;
+
+}
+
+.outside-marker {
+	list-style-position: outside;
+}

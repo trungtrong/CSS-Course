@@ -1,0 +1,7 @@
+div + p {
+	color: tomato;
+}
+
+.item-1 + .item {
+	background-color: #f2f2f2;
+}

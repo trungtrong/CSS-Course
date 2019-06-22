@@ -1,0 +1,32 @@
+.from-block-to-inline {
+	border: 1px solid black;
+	margin: 20px;
+	padding: 30px;
+}
+
+.p-item-1 {
+	display: inline;
+	background-color: tomato;
+	margin: 20px;
+	padding: 20px;
+}
+.p-item-2 {
+	display: inline;
+	background-color: tomato;
+	margin: 20px;
+	padding: 20px;
+}
+
+.from-line-to-block {
+	border: 1px solid black;
+	margin: 20px;
+	padding: 30px;
+}
+
+.s-1 {
+	display: block;
+}
+
+.s-2 {
+	display: block;
+}

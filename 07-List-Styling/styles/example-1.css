@@ -1,0 +1,15 @@
+.unordered-list {
+	list-style-type: none;
+	padding: 0;
+	border: 1px solid #ddd;
+}
+
+.unordered-list .list-item {
+	padding: 8px 16px;
+	border-bottom: 1px solid #ddd;
+}
+
+.unordered-list .list-item:last-child  {
+	border-bottom: none;
+}
+

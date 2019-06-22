@@ -1,0 +1,36 @@
+table {
+	width: 50%;
+	table-layout: auto;
+}
+
+table, th, td {
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+}
+
+th {
+	height: 50px;
+	padding: 15px;
+}
+
+td{
+	height: 30px;
+	text-align: center;
+	padding: 15px;
+}
+
+td:hover {
+	background-color: #575757;
+}
+
+tr:nth-child(even) {
+	background-color: #F2F2F2;
+}
+
+tr:nth-child(odd) {
+	background-color: transparent;
+}
+
+th {
+	background-color: lightgreen;
+}

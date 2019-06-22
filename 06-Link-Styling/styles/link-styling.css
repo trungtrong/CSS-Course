@@ -1,0 +1,58 @@
+.default-link {
+	font-family: sans-serif;
+	font-size: 2em;
+	color: rgba(0, 112, 255, 1);
+}
+
+.default-link:link {
+	text-decoration: none;
+}
+
+.default-link:visited {
+	color: #575757;
+	text-decoration: none;
+
+}
+
+.default-link:hover {
+	color: #575757;
+	text-decoration: underline;
+}
+
+.default-link:active {
+	color: #575757;
+	text-decoration: underline;
+}
+
+/************************************/
+.button-link {
+	font-family: sans-serif;
+	font-size: 2rem;
+	color: #575757;
+	background-color: #ffb7b7;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.button-link:link {
+	color: #575757;  /*should use color for button-link in here*/
+	text-decoration: none;
+}
+
+.button-link:visited {
+
+	color: #575757;
+	text-decoration: none;
+
+}
+
+.button-link:hover {
+	background-color: #f37676;
+	color: #575757;
+	text-decoration: none;
+}
+
+.button-link:active {
+	color: #575757;
+	text-decoration: none;
+}
