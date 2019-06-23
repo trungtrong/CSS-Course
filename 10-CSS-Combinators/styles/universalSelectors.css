@@ -1,0 +1,12 @@
+.div-1 * {
+	color: lightblue;
+}
+
+
+*.warning {
+	color: red;
+}
+
+* [lang^=en] {
+	color: green;
+}

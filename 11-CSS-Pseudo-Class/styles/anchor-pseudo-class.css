@@ -1,0 +1,17 @@
+a.link-1:link {
+	color: tomato;
+	text-decoration: none;
+}
+
+a.link-1:visited {
+	
+}
+
+a.link-1:hover {
+	text-decoration: underline;
+	color: #575757;
+}
+
+a.link-1:active {
+	
+}

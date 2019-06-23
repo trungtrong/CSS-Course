@@ -1,0 +1,7 @@
+.item::before {
+	content: "♥";
+}
+
+.animal::before {
+	content: url(../HinhNen.jpg);
+}

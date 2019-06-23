@@ -1,0 +1,11 @@
+.item:first-child {
+	color: blue;
+}
+
+.div-1 p:first-child {
+	color: tomato;
+}
+
+.list:first-child i {
+	color: green;
+}

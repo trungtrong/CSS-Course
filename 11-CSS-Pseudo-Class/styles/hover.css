@@ -1,0 +1,18 @@
+.div-1 {
+	border-bottom: 1px solid black;
+}
+
+.div-1:hover{
+	color: tomato;
+	border-bottom: 1px solid tomato;
+}
+
+.hidden-p {
+	display: none;
+	background-color: yellow;
+	padding: 20px;
+}
+
+.div-2:hover .hidden-p {
+	display: block;
+}

@@ -1,0 +1,29 @@
+div[class] {
+	color: red;
+}
+
+a[href="#"] {
+	text-decoration: none;
+}
+
+p[class~="item"] {
+	background-color: #f2f2f2;
+}	
+
+div[lang|="en"] {
+	color: green;
+}
+
+div[lang^="zh"] {
+	color: tomato;
+}
+
+a[href$=".org"] {
+	text-decoration: none;
+	color: #575757;
+}
+
+a[href*="example"] {
+	text-decoration: none;
+	color: tomato;
+}
