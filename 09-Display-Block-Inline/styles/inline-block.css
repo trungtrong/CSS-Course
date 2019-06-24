@@ -1,0 +1,28 @@
+.nav-bar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	width: fit-content;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+}
+
+.nav-bar li {
+	display: inline-block;
+	font-size: 20px;
+	padding: 20px 0;
+}
+
+li a {
+	text-decoration: none;
+	color: #575757;
+	text-align: center;
+	padding: 20px;
+}
+
+li a:hover {
+	background-color: tomato; 
+}
+
+

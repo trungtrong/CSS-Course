@@ -1,0 +1,36 @@
+.box {
+	color: #FFF;
+	height: 300px;
+	width: 100px;
+	background-color: purple;
+	border: 5px solid black;
+}
+
+.box-1 {
+	background-color: red;
+	position: fixed;
+	right: 0;
+}
+
+
+/******************/
+
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	color: white;
+}
+
+#one {
+	position: fixed;
+	top: 80px;
+	left: 0;
+	background-color: blue;
+}
+
+.outer {
+	max-width: 500px;
+	height: 300px;
+	padding-left: 150px;
+}

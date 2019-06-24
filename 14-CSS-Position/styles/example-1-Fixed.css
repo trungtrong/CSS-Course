@@ -1,0 +1,9 @@
+.outer {
+	margin: 100px;
+}
+
+.arrow-up {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}

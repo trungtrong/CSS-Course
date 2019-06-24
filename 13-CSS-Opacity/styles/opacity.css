@@ -1,0 +1,48 @@
+.transparent-image {
+	width: 170px;
+	height: 100px;
+	opacity: 0.8;
+}
+
+/*************************/
+.hover-image {
+	width: 170px;
+	height: 100px;
+}
+
+.hover-image:hover {
+	opacity: 0.8;
+}
+
+/****************/
+.box-1 {
+	background-color: green;
+}
+
+.box-2 {
+	opacity: 0.8;
+}
+
+.box-3 {
+	opacity: 0.3;
+}
+
+/********************/
+
+.background {
+	background: url(../flower.jpg) repeat;
+	border: 2px solid black;
+	padding: 10px;
+}
+
+.background .overlay {
+	background-color: #FFF;
+	border: 1px solid black;
+	opacity: 0.3;
+}
+
+.overlay p {
+	margin: 5%;
+	font-weight: bold;
+	color: #000;
+}

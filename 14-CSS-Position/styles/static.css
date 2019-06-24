@@ -1,0 +1,4 @@
+.static {
+	position: static;
+	border: 1px solid green;
+}
