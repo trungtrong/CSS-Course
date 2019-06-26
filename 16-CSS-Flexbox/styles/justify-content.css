@@ -1,0 +1,93 @@
+.flex-start {
+	background-color: lightblue;
+	margin: 10px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.flex-start > div {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	width: 50px;
+	height: 50px;
+}
+
+/******************************/
+
+.flex-end {
+	background-color: lightblue;
+	margin: 10px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.flex-end > div {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	width: 50px;
+	height: 50px;
+}
+
+/******************************/
+
+.center {
+	background-color: lightblue;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.center > div {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	width: 50px;
+	height: 50px;
+}
+
+/******************************/
+
+.space-around {
+	background-color: lightblue;
+	margin: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.space-around > div {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	width: 50px;
+	height: 50px;
+}
+
+/******************************/
+
+.space-between {
+	background-color: lightblue;
+	margin: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.space-between > div {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	width: 50px;
+	height: 50px;
+}
+
+/******************************/
+
+.space-evenly {
+	background-color: lightblue;
+	margin: 10px;
+	display: flex;
+	justify-content: stretch;
+}
+
+.space-evenly > div {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	width: 50px;
+	height: 50px;
+}

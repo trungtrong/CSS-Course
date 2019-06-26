@@ -1,0 +1,100 @@
+/*******************************/
+.flex-start {
+	background-color: lightblue;
+	height: 300px;
+	margin: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.flex-start > div {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	width: 500px;
+	height: 50px;
+}
+
+/*******************************/
+.flex-end {
+	background-color: lightblue;
+	height: 300px;
+	margin: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
+}
+
+.flex-end > div {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	width: 300px;
+	height: 50px;
+}
+
+/*******************************/
+.center {
+	background-color: lightblue;
+	height: 300px;
+	margin: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.center > div {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	width: 300px;
+	height: 50px;
+}
+
+/*******************************/
+.space-between {
+	background-color: lightblue;
+	height: 300px;
+	margin: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+.space-between > div {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	width: 300px;
+	height: 50px;
+}
+
+/*******************************/
+.space-arround {
+	background-color: lightblue;
+	height: 300px;
+	margin: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+
+.space-arround > div {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	width: 300px;
+	height: 50px;
+}
+
+/*******************************/
+.stretch {
+	background-color: lightblue;
+	height: 300px;
+	margin: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+}
+
+.stretch > div {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	width: 100px;
+}

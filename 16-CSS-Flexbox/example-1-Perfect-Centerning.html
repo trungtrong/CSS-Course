@@ -4,26 +4,28 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Bai 16 CSS Flexbox</title>
-		<style>
+		<style type="text/css">
 			.flex-container {
-				display: flex;
 				background-color: lightblue;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 300px;
 			}
 
 			.flex-container > div {
-				background-color: #f1f1f1;
-				margin: 10px;
-				padding: 20px;
-				font-size: 1.5em;
+				background-color: #f2f2f2;
+				width: 100px;
+				height: 100px;
 			}
+
 		</style>
 	</head>
 	
 	<body >
 		<div class="flex-container">
 			<div>1</div>
-			<div>2</div>
-			<div>3</div>
 		</div>
+
 	</body>
 </html>

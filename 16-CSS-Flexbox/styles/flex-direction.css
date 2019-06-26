@@ -1,0 +1,60 @@
+.row {
+	background-color: lightblue;
+	margin: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.row > div {
+	background-color: #f1f1f1;
+	margin: 10px;
+	padding: 20px;
+	font-size: 1.5em;
+}
+
+/***********************/
+.row-reversed {
+	background-color: lightblue;
+	margin: 10px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.row-reversed > div {
+	background-color: #f1f1f1;
+	margin: 10px;
+	padding: 20px;
+	font-size: 1.5em;
+}
+
+/***************************/
+.column {
+	background-color: lightblue;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.column > div {
+	background-color: #f1f1f1;
+	margin: 10px;
+	padding: 20px;
+	font-size: 1.5em;
+}
+
+/***************/
+.column-reversed {
+	background-color: lightblue;
+	margin: 10px;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.column-reversed > div {
+	background-color: #f1f1f1;
+	margin: 10px;
+	padding: 20px;
+	font-size: 1.5em;
+}
+
+
