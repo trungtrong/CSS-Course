@@ -1,0 +1,25 @@
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	background-color: lightblue;
+	
+}
+
+.flex-container > div {
+	background-color: tomato;
+	width: 100px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.item-1 {
+	flex-grow: 1;
+}
+
+.item-2 {
+	flex-grow: 1;
+}
+
+.item-3 {
+	flex-grow: 3;
+}

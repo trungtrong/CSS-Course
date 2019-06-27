@@ -1,0 +1,22 @@
+.flex-container {
+	display: flex;
+	align-items: stretch;
+
+	background-color: lightblue;
+	height: 100px;
+}
+
+.flex-container > div {
+	background-color: tomato;
+	width: 100px;
+	text-align: center;
+	margin: 10px;
+}
+
+.item-1 {
+	flex-shrink: 0;
+}
+
+.item-2 {
+	flex-shrink: 2;
+}

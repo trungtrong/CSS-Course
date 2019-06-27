@@ -1,0 +1,36 @@
+.weekly-item {
+	font-family: Arial, sans-serif;
+	width: 300px;
+	padding: 15px 0;
+	border-bottom: 1px solid #EEE; 
+
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+.weekly-item .index {
+	font-size: 1.3em;
+	padding: 10px;
+
+}
+
+.weekly-item .info {
+	text-transform: capitalize;
+	flex-grow: 1;
+}
+
+.info .song-title {
+	margin-bottom: 5px;
+}
+
+.info .singer {
+	font-size: 0.8em;
+	color: #999;
+}
+
+.weekly-item .view-count {
+	font-size: 0.8em;
+	color: #999;
+	padding: 10px;
+}
