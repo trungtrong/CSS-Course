@@ -1,0 +1,42 @@
+.nav-bar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/********* Vertical *************/
+.vertical-bar {
+	width: 200px;
+	background-color: #CCC;
+	border: 1px solid #555;
+	/*fixed vertical bar
+	height: 100%;
+	position: fixed;
+	overflow: auto;
+
+	 */
+}
+
+.vertical-bar li {
+	border-bottom: 1px solid #555;
+}
+
+.vertical-bar li:last-child {
+	border-bottom: none;
+}
+
+.vertical-bar li a {
+	display: block;
+	color: #000;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+.vertical-bar li a:hover {
+	background-color: green;
+}
+
+.vertical-bar .active {
+	background-color: tomato;
+	color: #fff;
+}

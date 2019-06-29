@@ -1,0 +1,67 @@
+body {
+	margin: 0;
+}
+.nav-bar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/********* Horizontal *************/
+
+.horizontal-bar {
+	/*Method 1: with display: inline
+	- background: #CCC;
+	- padding: 1em 0;
+	*/
+
+	/*Method 2: with display: inline-block
+	- background: #CCC;
+	*/
+	background: #CCC;
+	position: relative;
+	/* Fixed Horizontal Nav Bar
+	position: fixed;
+	top: 0;
+	width: 100%;*/
+
+}
+
+.horizontal-bar li {
+	/*Method 1: with display: inline
+		- display: inline;
+	*/
+
+	/*Method 2: with display: inline-block
+	- display: inline-block;
+	- padding: 1em 0;
+	*/
+	display: inline-block;
+	padding: 1em 0;
+}
+
+.horizontal-bar li a {
+	color: #000;
+	padding: 1em;
+	text-align: center;
+	text-decoration: none;
+}
+
+.horizontal-bar li a:hover {
+	background-color: green;
+}
+
+.horizontal-bar .active {
+	background-color: tomato;
+	color: #fff;
+}
+
+/*.horizontal-bar .right-side {
+	position: absolute;
+	right: 0;
+}
+
+.horizontal-bar .right {
+	position: absolute;
+	right: 72px;
+}*/

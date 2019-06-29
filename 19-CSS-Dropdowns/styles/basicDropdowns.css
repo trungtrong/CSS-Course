@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	background: #CCC;
+}
+
+.nav-bar > li {
+	display: inline-block;
+	padding: 10px 0;
+}
+
+.nav-bar li {
+	background-color: #eee;
+}
+
+
+.nav-bar li a {
+	padding: 10px 20px;
+	color: #000;
+
+	text-align: center;
+	text-decoration: none;
+}
+
+.nav-bar li a:hover {
+	background-color: green;
+}
+
+/******************************/
+
+.nav-bar .dropdown {
+	position: relative;
+}
+
+.nav-bar .dropdown .submenu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+
+/*	transition: all 0.5s ease;*/
+}
+
+.nav-bar > .dropdown > .submenu > li {
+	/*add padding between all sub-li*/
+	padding: 10px 0;
+}
+
+.nav-bar .dropdown:hover .submenu {
+	display: block;
+}
