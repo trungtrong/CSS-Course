@@ -1,0 +1,23 @@
+.wrapper {
+	border: 1px solid black;
+}
+
+.black {
+	float: left;
+
+	background-color: black;
+	color: #fff;
+	width: 20%;
+}
+
+.red {
+	float: right;
+	background-color: red;
+	width: 20%;
+}
+
+.both {
+	border: 1px solid tomato;
+	clear: both;
+}
+

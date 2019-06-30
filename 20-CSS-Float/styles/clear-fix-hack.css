@@ -1,0 +1,20 @@
+.header {
+	height: 100px;
+}
+
+.sidebar {
+	float: left;
+	width: 20%;
+}
+
+.article {
+
+}
+
+.container::after {
+	content: '';
+	visibility: hidden;
+	display: block;
+	clear: both;
+	height: 0;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>example</title>
+	<style>
+		div {
+ 		 	width: 50px;
+  		height: 50px;
+		}
+	
+		.red {
+  		background: red;
+  		position: relative;
+		}
+
+		.black {
+  		background: black;
+  		position: absolute;
+  		z-index: ;
+		}
+
+		.yellow {
+  		background: yellow;
+  		position: relative;
+		}
+
+		.purple {
+  		background: purple;
+  		width: 20px;
+			height: 20px;
+			position: absolute;
+  		z-index: 2;
+		}
+
+		.tomato {
+			background-color: tomato;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 0;
+			z-index: 1;			
+		}
+
+		span {
+			box-sizing: border-box;
+			background-color: lightblue;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div class="red">
+  	<div class="black"></div>
+  	<p class="p-1">Hello</p>
+	</div>
+
+	<div class="yellow">
+  	<div class="purple"></div>
+  	<div class="tomato"></div>
+	</div>
+</body>
+</html>

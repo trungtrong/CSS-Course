@@ -1,0 +1,52 @@
+img {
+	width: 100px;
+	height: 100px;
+}
+
+.float-none {
+}
+
+.left-1 {
+	float: left;
+}
+
+.left-2 {
+	float: left;
+	width: 100px;
+	height: 100px;
+
+	background: pink;
+	margin-right: 10px;
+	border: 1px solid black;
+}
+
+
+/****************/
+.right-1 {
+	float: right;
+}
+
+.right-2 {
+	float: right;
+	width: 100px;
+	height: 100px;
+
+	background: pink;
+	margin-right: 10px;
+	border: 1px solid black;
+}
+
+/****************************/
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li {
+	float: left;
+	background: pink;
+	padding: 10px;
+	border: 1px solid black;
+}

@@ -1,0 +1,19 @@
+.without-clear, .using-clear {
+	border: 1px solid purple;
+}
+
+.div-1 {
+	float: left;
+	width: 100px;
+	height: 100px;
+	border: 1px solid green;
+}
+
+.div-2 {
+	border: 1px solid tomato;
+}
+
+.using-clear .div-2 {
+	clear: left;
+}
+
