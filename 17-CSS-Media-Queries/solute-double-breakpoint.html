@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>17 CSS Media Queries</title>
+		<!-- https://tzi.fr/css/prevent-double-breakpoint/ -->
+		<!-- another solution: https://github.com/sass-mq/sass-mq -->
+		<style>
+			div[class*="item-"] {
+				height: 200px;
+				margin: 10px;
+			}
+
+			/*a double breakpoint bug */
+			@media (max-width: 320px) {
+				/*Applied below 320px*/
+				/*resize your viewport and try to reach exactly 320px*/
+				.item-bug{
+					color: white;
+					background: #000;
+				}
+			}
+
+			@media (min-width: 320px) {
+				/* Applied above and at 320px*/
+				.item-bug{
+					color: tomato;
+				}
+			}
+
+			/*********************************/
+
+			/*Solution 1: a separation of 1px */
+			@media (max-width: 319px) {
+				/*Applied below 320px*/
+				/*resize your viewport and try to reach exactly 320px*/
+				.item-solution-1 {
+					color: white;
+					background: #000;
+				}
+			}
+
+			@media (min-width: 320px) {
+				/* Applied above and at 320px*/
+				.item-solution-1 {
+					color: tomato;
+				}
+			}
+
+			/*****************************/
+
+			/*Solution 2: a separation in em */
+			@media (max-width: 19.99em) {
+				/*Applied below 320px*/
+				/*resize your viewport and try to reach exactly 320px*/
+				.item-solution-2 {
+					color: white;
+					background: #000;
+				}
+			}
+
+			@media (min-width: 20em) {
+				/* Applied above and at 320px*/
+				.item-solution-2 {
+					color: tomato;
+				}
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="item-bug">
+			<p>I am an hero</p>
+		</div>
+
+		<div class="item-solution-1">
+			<p>I am an hero</p>
+		</div>
+
+		<div class="item-solution-2">
+			<p>I am an hero</p>
+		</div>
+	</body>
+</html>

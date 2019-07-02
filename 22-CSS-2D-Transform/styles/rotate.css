@@ -1,0 +1,67 @@
+div{
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+
+.item {
+	background: red;
+}
+
+.item-1 {
+	background: tomato;
+	transform: rotate(45deg);
+}
+
+.item-2 {
+	background: lightblue;
+	transform: rotate(-30deg);
+}
+
+.item-3 {
+	background: purple;
+	transform: rotate(200grad);
+}
+
+/*****Example 2****/
+
+.rotate-translate {
+	background: orange;
+	transform: rotate(45deg) translate(100px);
+}
+
+.translate-rotate {
+	background: green;
+	transform: translate(100px) rotate(45deg);
+}
+
+/********Example 3**********/
+.element {
+	display: inline-block;
+	background: pink;
+	height: 100px;
+	width: 100px;
+	margin-right: 5px;
+	margin-left: 5px;
+	animation: roll 3s infinite;
+	transform: rotate(30deg);
+	opacity: .7;
+}
+
+@keyframes roll {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.parent {
+	width: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+

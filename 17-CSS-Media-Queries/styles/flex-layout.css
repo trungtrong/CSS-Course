@@ -1,5 +1,6 @@
 body {
 	font-family: Arial, sans-serif;
+	margin: 0;
 }
 
 .title {
@@ -17,12 +18,120 @@ header {
 
 /****************************/
 nav .nav-bar {
-	list-style: none;
+	display: flex;
 	padding: 0;
 	margin: 0;
+	
+	list-style: none;
+	background-color: #333;
 }
 
-nav .nav-bar li{
-	width: fit-content;
+nav .nav-bar li a {
+	text-decoration: none;
+	text-align: center;
+
+	padding: 20px;
+	color: #fff;
+	border: none;
+
+	/*full-width*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
 }
 
+nav .nav-bar li a:hover {
+	background-color: #f2f2f2;
+	color: #000;
+	border: 0.3px solid #f2f2f2;
+}
+
+@media screen and (max-width: 700px) {
+	nav .nav-bar {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	nav .nav-bar li a {
+		flex-direction: row;
+		padding: 10px 0;
+		width: 100%;
+	}
+}
+
+/*****************************************/
+
+.page-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.page-content > summary {
+	flex: 1;
+	padding: 15px;
+
+	background: #f1f1f1;
+	color: #000;
+}
+
+.page-content > article {
+	flex: 2;
+	padding: 15px;
+}
+
+@media screen and (max-width: 700px) {
+	.page-content {
+		flex-direction: column;
+	}
+}
+
+.page-content > summary > .user-info > h5 {
+	margin: 10px 0;
+}
+
+.page-content > summary > .user-info > .avatar {
+	height: 150px;
+	background: #aaa;
+	padding: 10px;
+}
+
+.page-content > summary > .user-info > .additional-text {
+	padding: 10px 0;
+}
+
+.page-content > summary > .additional-info > .title {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.page-content > summary > .additional-info > .describe-image {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.page-content > summary > .additional-info > .image-item {
+	background: #aaa;
+	padding: 20px;
+	margin-bottom: 15px; 
+}
+
+/******/
+.page-content > article > .item > .article-image {
+	height: 200px;
+	padding: 20px;
+	background: #aaa;
+}
+
+.page-content > article > .item {
+	padding-bottom: 20px;
+}
+
+
+/***************************/
+footer {
+	background: #ddd;
+	text-align: center;
+	padding: 20px;
+}

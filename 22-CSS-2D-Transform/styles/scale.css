@@ -1,0 +1,29 @@
+/* element is unchanged */
+.unchanged {
+	transform: scale(1, 1);
+}
+
+/* scales element to 0.5 times its size */
+.decrease {
+	transform: scale(0.5);
+}
+
+/*scale both dimension*/
+.scale-X-Y {
+	transform: scale(1.5, 0.5);
+}
+
+/*flip-two-dimension*/
+.flip-two-dimension {
+	transform: scale(-1);
+}
+
+/*turn around the original image*/
+.turn-around {
+	transform: scaleX(-1);
+}
+
+/*flip following Y dimension*/
+.flip-Y {
+	transform: scaleY(-1);
+}

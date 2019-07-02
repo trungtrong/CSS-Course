@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+}
+
+.nav-bar {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background: red;
+	padding: 0;
+}
+.nav-bar li {
+	float: left;
+	display: block;
+	background: green;
+	padding: 20px 0;
+}
+
+.nav-bar li a {
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	padding: 20px;
+}
+
+.nav-bar li a:hover {
+	background: #f2f2f2;
+	color: #000;
+}

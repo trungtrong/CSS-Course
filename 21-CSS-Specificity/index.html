@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>21 CSS Specificity</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<style>
+			#ex-3 #p-1 {
+			color: purple;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h3>Equal specificity: the latest rule counts</h3>
+		<h4>This is the same rule</h4>
+
+		<hr>
+		<h3>How to calculate Specificity</h3>
+		<div id="ex-2">
+			This is a good spot			
+		</div>
+
+		<hr>
+		<h3>Compare between External styles, Internal Styles and Inline styles</h3>
+		<div id="ex-3">
+			<p id="p-1">This is some texts</p>
+		</div>
+
+		<hr>
+		<h3>Using Id selectors > ID-attribute selector</h3>
+		<p id="foo">I am hero</p>
+
+		<hr>
+		<h3>body and html element</h3>
+		<div>
+			<p id="id-1">Here is a title</p>
+		</div>
+
+		<hr>
+		<h2>22-4.!important</h2>
+		<h3>22-4-2-1.Overriding inline styles</h3>
+
+		<div class="div-1" style="color: blue">Hello</div>
+
+		<h3>22-4-2-2.Overriding hight specificity</h3>
+		<div id="someElement">
+			<p class="awesome">This is A</p>
+		</div>
+
+		<hr>
+		<h3>:not() negation pseudo-class</h3>
+		<div class="outer">
+			<p>this is in the outer</p>
+			<div class="inner">
+				<p>this is in the inner</p>
+			</div>
+		</div>
+
+	</body>
+</html>
+

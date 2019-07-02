@@ -1,0 +1,35 @@
+/* element is unchanged */
+.skewX-unchanged {
+	transform: skewX(180deg);
+	/*or skewX(-180deg)*/
+}
+
+.skewX-left {
+	transform: skewX(30deg);
+}
+
+.skewX-right {
+	transform: skewX(-30deg);
+}
+
+
+/* Do not to use
+.skewX-disappear {
+	transform: skewX(90deg);
+	or skewX(-90deg)
+}*/
+
+/***********************/
+/* element is unchanged */
+.skewY-unchanged {
+	transform: skewY(180deg);
+	/*or skewX(-180deg)*/
+}
+
+.skewY-top {
+	transform: skewY(30deg);
+}
+
+.skewY-bottom {
+	transform: skewY(-30deg);
+}

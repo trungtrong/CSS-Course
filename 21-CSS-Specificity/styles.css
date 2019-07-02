@@ -1,0 +1,77 @@
+h4 {
+	color: red;
+}
+
+h4 {
+	color: purple;
+}
+
+/**************************/
+
+div#ex-2 {
+	color: tomato;
+}
+
+#ex-2 {
+	color: lightblue;
+}
+
+
+div[id="ex-2"] {
+	color: yellow;
+}
+
+/****************************/
+/*#ex-3 p {
+	color: tomato;
+}*/
+
+#ex-3 p {
+	color: tomato;
+}
+
+/*****************************/
+
+*#foo {
+	color: green;
+}
+
+*[id='foo'] {
+	color: purple;
+}
+
+/*****************************/
+
+div #id-1 {
+	color: tomato;
+}
+
+html #id-1 {
+	color: blue;
+}
+
+/*********************/
+
+.div-1[style*="color: blue"] {
+	color: firebrick !important;
+}
+
+/****************************/
+
+[id="someElement"] p {
+	color: blue;
+}
+
+p.awesome {
+	color: red;
+}
+
+/****************************/
+
+div.outer p {
+	color: orange;
+}
+
+div:not(.outer) p {
+	color: violet;
+}
