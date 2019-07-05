@@ -1,0 +1,57 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.social-item {
+	width: 200px;
+}
+
+/* for button */
+
+.social-item .button {
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 10px;
+
+	border: none;
+	border-radius: 10px;
+
+	font-size: 1em;
+	text-align: left;
+
+	opacity: 0.85;
+}
+
+.social-item .button:hover {
+	opacity: 1;
+}
+
+/* for <a>*/
+.social-item .button .content {
+	color: #fff;
+	text-decoration: none;
+}
+
+.social-item .button .content .fab {
+	padding-right: 10px;
+}
+
+/*****************************/
+.social-item .facebook-item .content .fab {
+	padding: 0 5px;
+}
+.social-item .facebook-item {
+	background: #5670a1;
+}
+
+.social-item .twitter-item {
+	background: #6CB6EE;
+}
+
+.social-item .google-item {
+	background: #E06455;
+}
+

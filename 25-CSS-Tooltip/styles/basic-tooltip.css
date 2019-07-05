@@ -1,0 +1,106 @@
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	margin-left: 100px;
+}
+
+.tooltip .tooltip-text {
+	visibility: hidden;
+	/*display: none;*/
+	width: 120px;
+	background-color: black;
+	color: #fff;
+
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	opacity: 0;
+	transition: opacity 1s;
+
+	/*position of the tooltip*/
+	position: absolute;
+	z-index: 1;
+
+/*************center-bottom*****************/
+	top: 100%;
+	left: 50%;
+	margin-left: -60px;
+
+/*************center-top*****************/
+/*	bottom: 100%;
+	left: 50%;
+	margin-left: -60px;*/
+
+/**************right-tooltip***************/
+	/*top: -10%;
+	left: 105%;*/
+
+/**************left-tooltip***************/
+/*	top: -10%;
+	right: 105%;*/
+}
+
+/*************Top Arrow of Bottom tooltip**********************/
+ /* position of .tooltip-text , b/c ::before of tooltip-text*/
+.tooltip .tooltip-text::before {
+	content: "";
+	position: absolute;
+	bottom: 100%; 
+	left: 50%;
+
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+}
+
+/*************Bottom Arrow of Top tooltip*********************/
+/*.tooltip .tooltip-text::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}*/
+
+
+/*************Left Arrow of Right Tooltip*********************/
+/*.tooltip .tooltip-text::before {
+	content: "";
+	position: absolute;
+	top: 30%;
+	right: 100%;
+
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent black transparent transparent;
+}*/
+
+/*************Right Arrow of Left Tooltip*********************/
+/*.tooltip .tooltip-text::after {
+	content: "";
+	position: absolute;
+	top: 30%;
+	left: 104%;
+
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent transparent black;
+}*/
+
+/*************************************/
+
+.tooltip:hover .tooltip-text {
+	visibility: visible;
+	/*display: inline;*/
+
+	opacity: 1;
+}

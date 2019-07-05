@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="styles/toggle-switch.css">
+		
+		<title>24 CSS Forms</title>
+	</head>
+	
+	<body>
+		<label class="switch">
+			<input id="checkedButton" type="checkbox" name="item" value="off">
+			<span class="slider round"></span>
+		</label>
+
+		<script>
+			var checkedButton = document.getElementById('checkedButton');
+
+			checkedButton.addEventListener('click', reviewCheckbox);
+
+			function reviewCheckbox() {
+				if (checkedButton.checked === true) {
+					console.log('true');
+				} else {
+					console.log('false');
+				}
+			}
+		</script>
+	</body>
+</html>

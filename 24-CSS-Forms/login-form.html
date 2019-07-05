@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="styles/loginForm.css">
+
+		<title>24 CSS Forms</title>
+	</head>
+	
+	<body>
+		<h2>Login Form</h2>
+			<div class="login-item">
+				<button id="displayButton" class="button login-button" type="submit">Login</button>
+			</div>
+
+		<div id="modal" class="modal-container">
+			<form id="loginForm" class="login-form animate">
+				<div class="avatar-container">
+					<img class="avatar" src="images/HinhNen.jpg" alt="Avatar" /> 
+
+					<span id="closeIcon" class="close-icon" title="Close Modal">&times;</span>
+				</div>
+
+				<div class="item username-item">
+					<label class=" label username-label">Username</label>
+	
+					<input class=" input username-input" type="text" name="username" required placeholder="Enter Username" />
+				</div>
+
+				<div class="item password-item">
+					<label class=" label password-label">Password</label>
+	
+					<input class=" input password-input" type="password" name="password" required placeholder="Enter Password" />
+				</div>
+
+				<div class="button-item">
+					<button class="button cancel-button" type="button">Cancel</button>
+
+					<button class="button login-button" type="submit">Login</button>
+				</div>
+
+				<div class="remember-item">
+					<input class="remember-checkbox" type="checkbox" name="remember" value="remember" />
+
+					<label class="remember-label">Remember me</label>
+				</div>
+
+				<div class="forgot-item">
+					<p>Forgot <a class="reset-password" href="#">password?</a></p>
+				</div>
+			</form>
+		</div>
+
+		<script>
+			var loginForm = document.getElementById('modal');
+
+			var closeIcon = document.getElementById('closeIcon');
+
+			var displayButton = document.getElementById('displayButton');
+
+			closeIcon.addEventListener('click', closeLoginForm);
+
+			function closeLoginForm() {
+				loginForm.style.display = "none";
+			}
+
+			displayButton.addEventListener('click', displayForm);
+
+			function displayForm() {
+				loginForm.style.display = "block";
+			}
+		</script>	
+	</body>
+</html>

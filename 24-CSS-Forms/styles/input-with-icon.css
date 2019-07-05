@@ -1,0 +1,51 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+.search-form {
+	height: 2em;
+	border: 1px solid #000;
+	border-radius: 20px;
+	background-color: orange;
+
+	/*stretch out*/
+	display: flex; 
+}
+
+.search-form .search-label {
+	display: none;
+}
+
+.search-form input[type="search"] {
+	flex: 1;
+	padding: 0 0 0 20px;
+	background-color: #ddd;
+
+	outline: none;
+	border: none;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;  /*don't use em*/
+
+	font-size: 1.3em;
+}
+
+.search-form > .button-search {
+	width: 8%;
+	padding: 0 16px;
+	background-color: transparent;
+
+	background: url('../search.svg') no-repeat;
+
+	transform: scale(0.8),
+
+	outline: none;
+	cursor: pointer;
+
+	border: none;
+
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	
+}
+
+

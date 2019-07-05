@@ -1,0 +1,41 @@
+.item-1 {
+	width: 100px;
+	height: 100px;
+	background: lightblue;
+	transition-property: background;
+
+	transition-duration: 1s;
+	/*-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;*/
+}
+
+.item-1:hover {
+	background: pink;
+}
+
+/**********************/
+.container {
+	width: 500px;
+	height: 200px;
+	background: #f2f2f2;
+}
+.item-2 {
+	width: 100px;
+	height: 100px;
+
+	position: relative;
+	left: 0;
+	
+	background: tomato;
+	transform: rotate(0);
+	
+	transition-property: background, left, transform;
+	transition-duration: 1s, 1s, 2s;
+}
+
+.container:hover .item-2 {
+	background: lightblue;
+	left: 500px;
+	transform: rotate(360deg);
+}

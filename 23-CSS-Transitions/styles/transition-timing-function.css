@@ -1,0 +1,156 @@
+.item-ease {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+
+	position: relative;
+	left: 0;
+	
+	background: tomato;
+	
+	transition-property: background, left, transform;
+	transition-duration: 1s, 1s;
+	transition-delay: 0s;
+	transition-timing-function: ease;
+}
+
+.container:hover .item-ease {
+	background: lightblue;
+	left: 500px;
+}
+
+/*****************************/
+.item-linear {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+
+	position: relative;
+	left: 0;
+	
+	background: tomato;
+	
+	transition-property: background, left, transform;
+	transition-duration: 1s, 1s;
+	transition-delay: 0s;
+	transition-timing-function: linear;
+}
+
+.container:hover .item-linear {
+	background: lightblue;
+	left: 500px;
+}
+
+/*****************************/
+
+.item-ease-in {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+
+	position: relative;
+	left: 0;
+	
+	background: tomato;
+	
+	transition-property: background, left, transform;
+	transition-duration: 1s, 1s;
+	transition-delay: 0s;
+	transition-timing-function: ease-in;
+}
+
+.container:hover .item-ease-in {
+	background: lightblue;
+	left: 500px;
+}
+
+/*****************************/
+
+.item-ease-out {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+
+	position: relative;
+	left: 0;
+	
+	background: tomato;
+	
+	transition-property: background, left, transform;
+	transition-duration: 1s, 1s;
+	transition-delay: 0s;
+	transition-timing-function: ease-out;
+}
+
+.container:hover .item-ease-out {
+	background: lightblue;
+	left: 500px;
+}
+/*****************************/
+
+.item-ease-in-out {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+
+	position: relative;
+	left: 0;
+	
+	background: tomato;
+	
+	transition-property: background, left, transform;
+	transition-duration: 1s, 1s;
+	transition-delay: 0s;
+	transition-timing-function: ease-in-out;
+}
+
+.container:hover .item-ease-in-out {
+	background: lightblue;
+	left: 500px;
+}
+
+/*****************************/
+
+.item-step-n-jump-start {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+
+	position: relative;
+	left: 0;
+	
+	background: tomato;
+	
+	transition-property: background, width;
+	transition-duration: 1s, 1s;
+	transition-delay: 0s;
+	transition-timing-function: steps(5, jump-start);
+}
+
+.container:hover .item-step-n-jump-start {
+	background: lightblue;
+	width: 600px;
+}
+
+/*****************************/
+
+.item-step-n-jump-end {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+
+	position: relative;
+	left: 0;
+	
+	background: tomato;
+	
+	transition-property: background, width;
+	transition-duration: 1s, 1s;
+	transition-delay: 0s;
+	transition-timing-function: steps(5, jump-start);
+}
+
+.container:hover .item-step-n-jump-end {
+	background: lightblue;
+	width: 600px;
+}

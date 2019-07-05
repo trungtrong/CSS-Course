@@ -1,0 +1,33 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+.comment-form {
+	font-family: Arial, sans-serif;
+}
+.comment-form .comment-label {
+	display: none;
+}
+
+.comment-form .comment-area {
+
+	width: 50%;
+	height: 150px;
+	color: #f2f2f2;
+
+	font-size: 1.1em;
+	line-height: 1.3em;
+
+	padding: 1.25em;
+	background-color: #312d3c;
+
+	border: 2px solid #312d3c;
+	border-radius: 18px;
+
+	resize: none;
+	outline: none;
+}
+
+.comment-form .comment-area:focus {
+	border: 2px solid orange;
+}
