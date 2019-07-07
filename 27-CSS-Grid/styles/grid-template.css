@@ -1,0 +1,88 @@
+
+/* Method 1: <grid-template-rows> / <grid-template-columns> */
+/*.container {
+	display: grid;
+	border: 1px solid black;
+
+	width: 100%;
+	height: 200px;
+	grid-template: auto / repeat(4, 1fr);
+}
+
+.container > .header {
+	background: tomato;
+	text-align: center;
+}
+
+.container > .main {
+	background: lightblue;
+	text-align: center;
+}
+
+.container > .sidebar {
+	background: orange;
+	text-align: center;
+
+}
+
+.container > .footer {
+	background: violet;
+	text-align: center;
+}*/
+
+
+/****************  Method 2 *******************/
+
+.container {
+	display: grid;
+	border: 1px solid black;
+
+	width: 100%;
+	height: 200px;
+
+	grid-template: 
+		[header-start] "header header header header" auto [header-end]
+		[main-start] "main main main sidebar" auto [main-end]
+		[footer-start] "footer footer footer footer" auto [footer-end]
+		/ 1fr 1fr 1fr 1fr;
+	
+	/*grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"header header header header"
+		"main main . sidebar"
+		"footer footer footer footer";*/
+}
+
+.container > .header {
+	background: tomato;
+	text-align: center;
+
+	grid-area: header;
+}
+
+.container > .main {
+	background: lightblue;
+	text-align: center;
+
+	grid-area: main;
+}
+
+.container > .sidebar {
+	background: orange;
+	text-align: center;
+
+	grid-area: sidebar;
+}
+
+.container > .footer {
+	background: violet;
+	text-align: center;
+
+	grid-area: footer;
+}
+
+
+
+
+

@@ -1,0 +1,97 @@
+div[class*="item"] {
+	background-color: tomato;
+}
+
+.container {
+	border: 1px solid black;
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10px;
+	
+	display: grid;
+	grid-template-columns: 100px 50px;
+	grid-template-rows: 50px 50px;
+	grid-gap: 10px;
+
+	justify-content: start;
+}
+
+/************* end *******************/
+
+.container-end {
+	border: 1px solid black;
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10px;
+	
+	display: grid;
+	grid-template-columns: 100px 50px;
+	grid-template-rows: 50px 50px;
+	grid-gap: 10px;
+
+	justify-content: end;
+}
+
+/************* center *******************/
+
+.container-center {
+	border: 1px solid black;
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10px;
+	
+	display: grid;
+	grid-template-columns: 100px 50px;
+	grid-template-rows: 50px 50px;
+	grid-gap: 10px;
+
+	justify-content: center;
+}
+
+/************* space-around *******************/
+
+.container-space-around {
+	border: 1px solid black;
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10px;
+	
+	display: grid;
+	grid-template-columns: 100px 50px;
+	grid-template-rows: 50px 50px;
+	grid-gap: 10px;
+
+	justify-content: space-around;
+}
+
+/************* space-between *******************/
+
+.container-space-between {
+	border: 1px solid black;
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10px;
+	
+	display: grid;
+	grid-template-columns: 100px 50px;
+	grid-template-rows: 50px 50px;
+	grid-gap: 10px;
+
+	justify-content: space-between;
+}
+
+/************* space-between *******************/
+
+.container-space-evenly {
+	border: 1px solid black;
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10px;
+	
+	display: grid;
+	grid-template-columns: 100px 50px 100px;
+	grid-template-rows: 50px 50px;
+	grid-gap: 10px;
+
+	justify-content: space-evenly;
+}

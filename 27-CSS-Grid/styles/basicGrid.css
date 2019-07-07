@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	display: grid;
+	border: 1px solid black;
+	background: blue;
+	padding: 10px;
+}
+
+.container .item {
+	border: 1px solid black;
+	background: lightblue;
+	padding: 20px;
+	margin-bottom: 5px;
+}
+
+.container .item-2 .sub-item {
+	border: 1px solid orange;
+	background-color: red;
+	padding: 10px;
+}

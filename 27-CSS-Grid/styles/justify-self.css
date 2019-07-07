@@ -1,0 +1,30 @@
+div[class*="item-"] {
+	background-color: tomato;
+}
+
+.container {
+	border: 1px solid black;
+	height: 300px;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 100px 150px;
+	grid-gap: 10px;
+
+}
+
+.item-a {
+	justify-self: stretch;
+}
+
+.item-b {
+	justify-self: start;
+}
+
+.item-c {
+	justify-self: end;
+}
+
+.item-d {
+	justify-self: center;
+}

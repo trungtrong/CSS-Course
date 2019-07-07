@@ -1,0 +1,82 @@
+div[class*="item-"] {
+	background: tomato;
+}
+
+.container {
+	border: 1px solid black;
+	width: 100%;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 100px; /*width of each grid item : 100px*/
+	grid-gap: 10px;
+}
+
+.container .item-a {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.container .item-c {
+	grid-column-start: 1;
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+
+/***************************************/
+.container-1 {
+	border: 1px solid black;
+	width: 100%;
+	height: 300px;
+
+	display: grid;
+	grid-template-columns: [first] 50px [line2] 50px [line3] auto [five] 50px [end] ;
+	grid-template-rows: [row-start] 50px [row-end] 100px [third-line] 100px [last-line];
+	grid-gap: 10px;
+}
+
+.container-1 .item-a {
+	grid-column-start: 2;
+	grid-column-end: 1 five;
+	grid-row-start: 1 row-start;
+	grid-row-end: 3;
+}
+
+/***************************************/
+.container-2 {
+	border: 1px solid black;
+	width: 100%;
+	height: 300px;
+
+	display: grid;
+	grid-template-columns: repeat(5, 1fr) ;
+	grid-template-rows: 50px 100px;
+	grid-gap: 10px;
+}
+
+.container-2 .item-a {
+	grid-column-start: span 2;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: span 3;
+}
+
+/***************************************/
+/*grid-column and grid-row (Shorthand)*/
+.container-3 {
+	border: 1px solid black;
+	width: 100%;
+	height: 300px;
+
+	display: grid;
+	grid-template-columns: repeat(5, 1fr) ;
+	grid-template-rows: 50px 100px;
+	grid-gap: 10px;
+}
+
+.container-3 .item-a {
+	grid-column: 3 / span 2;
+	grid-row: 1 / span 3;
+}
