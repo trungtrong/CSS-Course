@@ -1,0 +1,29 @@
+body {
+	margin: 0 auto;
+	max-width: 56em;
+	padding: 1em 0;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 150px auto 150px;
+	grid-template-rows: repeat(3, 100px);
+	grid-gap: 1em;
+}
+
+.container > * {
+	background: #ddd;
+	padding: 1em;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container header, footer {
+	grid-column: 1/4;
+}
+
+
+
+

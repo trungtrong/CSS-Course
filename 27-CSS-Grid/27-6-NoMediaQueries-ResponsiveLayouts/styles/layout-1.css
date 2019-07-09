@@ -1,0 +1,190 @@
+/* Typography imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+}
+
+p, a {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*Generic styles*/
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	background-color: goldenrod;
+	text-decoration: none;
+	color: #fff;
+	border-radius: .25rem;
+	text-align: center;
+	display: inline-block;
+	transition: all .3s;
+}
+
+a:hover {
+	opacity: .6;
+}
+
+/***************************************************************/
+/*styles for the hero images*/
+/*.title-image {
+	height: 50vh;
+
+	position: relative;
+}
+
+.title-image > img {
+	height: 100%;
+	width: 100%;
+}
+
+.hero {
+	height: 50vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1rem 2rem;
+
+	/*Grid styles*/
+/*	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-template-rows: repeat(auto-fit, 20vh);
+}
+
+.hero > * {
+	color: #fff;
+}
+
+.hero > h1 {
+	font-size: 4rem;
+	padding-bottom: 1rem;
+}
+
+.hero > article > p {
+	font-size: 1.1rem;
+	font-weight: 200;
+}
+
+.hero > article > a {
+	padding: 1rem;
+	margin-top: .75rem;
+}*/
+
+/****************************************************/
+
+/*styles for the hero images*/
+
+.hero {
+	/* Photo by mnm.all on Unsplash*/
+	background: url('https://images.unsplash.com/photo-1518176258769-f227c798150e') center no-repeat;
+	background-size: 100% 100%;
+	/*responsive image: 
+	b/c <section> has the default width = 100% 
+	*/
+
+	padding: 4rem 2rem;
+
+	/*Grid styles*/
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.hero > * {
+	color: #fff;
+}
+
+.hero > h1 {
+	font-size: 4rem;
+	padding-bottom: 1rem;
+}
+
+.hero > article > p {
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+
+.hero > article > a {
+	padding: 1rem;
+	margin-top: .75rem;
+}
+/**********************************/
+
+/*breweries styles*/
+.breweries {
+	padding: 2rem;
+}
+
+.breweries > ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+}
+
+.breweries > ul > li {
+	list-style: none;
+	border: 1px solid #e2e2e2;
+	border-radius: .5rem;
+}
+
+.breweries > ul > li > figure {
+	max-height: 220px; /*the height is consistent*/
+	margin: 0;
+	
+	/*overflow: for parent of image*/
+	overflow: hidden; /*If image overflow to max-height:220px*/
+	
+	border-top-left-radius: .5rem;
+	border-top-right-radius: .5rem;
+
+	position: relative;
+}
+
+.breweries > ul > li > figure > img {
+	/*Responsive Image: width: 100% */
+	max-width: 100%;  
+}
+
+.breweries > ul > li > figure > figcaption {
+	position: absolute;
+	bottom: 0;
+
+	background-color: rgba(0, 0, 0, .7);
+	width: 100%;
+}
+
+.breweries > ul > li > figure > figcaption > h3 {
+	color: #fff;
+	padding: .75rem;
+	font-size: 1.25rem;
+}
+
+.breweries > ul > li > p {
+	font-size:  1rem;
+	line-height: 1.5;
+	padding: 1rem .75rem;
+	color: #666;
+}
+
+.breweries > ul > li > a {
+	padding: .5rem 1rem;
+	margin: .5rem;
+}
+
+
+/*********************************/
+footer {
+	background-color: #333;
+	padding: .75rem;
+	color: #fff;
+	text-align: center;
+	font-size: 0.75rem;
+}
