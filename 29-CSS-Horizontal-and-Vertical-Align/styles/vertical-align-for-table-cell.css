@@ -1,0 +1,16 @@
+.container {
+	border: 1px solid tomato;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.cell-1 {
+	width: 50%;
+	display: table-cell;
+}
+
+.cell-2 {
+	width: 50%;
+	display: table-cell;
+	vertical-align: middle;
+}

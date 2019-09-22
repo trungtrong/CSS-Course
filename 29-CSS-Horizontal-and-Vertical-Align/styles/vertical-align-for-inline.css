@@ -1,0 +1,60 @@
+.container {
+	border: 1px solid tomato;
+	width: 50%;
+	margin: 0 auto;
+	height: 150px;
+	padding-top: 20px;
+}
+
+/**********middle***********/
+.middle-img img {
+	vertical-align: middle;
+}
+
+.middle-text span {
+	vertical-align: middle;
+	font-size: 2.1em;
+}
+
+/********* text-top**********/
+
+.text-top-img img {
+	vertical-align: text-top;
+	font-size: 2.1em;
+	padding: 10px;
+}
+
+.text-top-text span {
+	vertical-align: text-top;
+	font-size: 2.1em;	
+}
+
+/********* text-bottom**********/
+
+.text-bottom-img img {
+	vertical-align: text-bottom;
+}
+
+.text-bottom-text span {
+	vertical-align: text-bottom;
+	font-size: 2.1em;	
+}
+
+/************ <length>****************/
+.length span {
+	vertical-align: 100px;
+}
+/********< percentage>****************/
+.percentage span {
+	vertical-align: 100%;
+}
+
+/********top****************/
+.top span {
+	vertical-align: top;
+}
+
+/********bottom****************/
+.bottom .img-1 {
+	vertical-align: top;
+}

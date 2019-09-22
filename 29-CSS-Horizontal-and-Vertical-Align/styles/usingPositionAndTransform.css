@@ -1,0 +1,18 @@
+.container {
+	border: 1px solid tomato;
+	width: 50%;
+	height: 300px;
+	margin: 0 auto;
+
+	position: relative;
+}
+
+.container span {
+	background-color: pink;
+	display: inline-block;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

@@ -1,0 +1,11 @@
+.container {
+	border: 2px solid tomato;
+	width: 50%;
+	margin: 0 auto;
+
+	/*overflow: auto;*/
+}
+
+.container img {
+	float: right;
+}

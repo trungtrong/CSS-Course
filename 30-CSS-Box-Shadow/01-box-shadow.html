@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>01 Box Shadow Property</title>
+	<style>
+		div[class^="box-"] {
+			width: 18rem;
+			height: 10rem;
+			background-color: #ccc;
+		}
+
+		div.box-1 {
+			-webkit-box-shadow: 5px 5px 10px #999; /*safari*/
+			-moz-box-shadow: 5px 5px 10px #999; /* firefox */
+			box-shadow: 5px 5px 10px -20px #999;
+		}
+
+		div.box-2 {
+			box-shadow: -5px -5px 10px #999;
+		}
+
+		div.box-multiple {
+			box-shadow: 5px 5px 10px #999, 0px -5px 10px #999
+		}
+
+		div.box-inset {
+			/* top - left */
+			box-shadow: inset 5px 5px 10px #999;
+			/* or 
+			box-shadow: 5px 5px 10px #999 inset;			
+			*/
+
+		}
+
+	</style>
+</head>
+
+<body>
+	<!-- 
+	box-show: <offset-x> <offset-y> <blur-radius> 
+							<spread: optional> <color>
+					=	X Y spread color
+
+		+ offset-x: horizontal offset
+		
+		+ offset-y: vertical offset
+
+		+ blur-radius: 
+			+ must be greater than 0
+
+			+ the larger the number will be blurred
+			+ => if blur-radius = 0, the edges of the shadow will be sharp
+
+		+ spead: 
+			- if spread > 0: it increase the blur-radius
+			- otherwise, it decrease  the blur - radius
+
+		+ color
+	-->
+	<h3>Bottom - right single shadow</h3>
+	<div class="box-1"></div>
+
+	<h3>Top - Left single shadow</h3>
+	<div class="box-2"></div>
+
+	<h3>Multiple Shadow</h3>
+	<div class="box-multiple"></div>
+
+	<h3>Inner Shadow</h3>
+	<div class="box-inset"></div>
+
+</body>
+</html>

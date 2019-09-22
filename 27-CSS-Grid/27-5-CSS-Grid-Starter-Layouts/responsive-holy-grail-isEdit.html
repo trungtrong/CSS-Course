@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid Starter Layouts</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body, html {
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+		}
+
+		div.container {
+			height: 100%;
+			margin: auto;
+			max-width: 56em;
+
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: repeat(5, auto);
+
+			/*grid-template-columns: 15% 1fr 15%;
+			grid-template-rows: 8% 1fr 10%;*/
+		}
+
+		header {
+			background-color: #91c8ff;
+		}
+
+		aside {
+			display: none;
+			background-color: #5e86af;
+		}
+
+		main {
+			background-color: #83d8fd;
+		}
+
+		footer {
+			background-color: #588ec3;
+		}
+
+		div.container header, footer {
+			grid-column: 1/4;
+		}
+
+		main {
+		}
+
+
+		/*mobile first*/
+		@media (min-width: 768px) {
+			div.container {
+				grid-template-columns: 15% 1fr 15%;
+				grid-template-rows: 8% 1fr 10%;
+			}
+
+			div.container aside {
+				display: block;
+			}
+		}
+
+		@media (max-width: 767px) {
+			main {
+				grid-row: 2/5;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>Header</header>
+		<aside>Left sidebar</aside>
+		<main>Main</main>
+		<aside>Right Sidebar</aside>
+		<footer>Footer</footer>
+	</div>
+	<script type="text/javascript"></script>
+</body>
+</html>

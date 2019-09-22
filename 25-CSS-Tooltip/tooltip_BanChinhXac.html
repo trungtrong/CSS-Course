@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tool tip</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.tooltip {
+			display: inline-block;
+			width: fit-content;
+			position: relative;
+			margin: 0;
+			padding: 0;
+
+			cursor: pointer;
+		}
+
+		.tooltip > p {
+			margin: 0;
+		}
+
+		.tooltip-text {
+			display: none;
+			position: absolute;
+			top: 120%;
+			left: 50%;
+			z-index: 100;
+
+
+			color: #fff;
+			width: max-content;
+			padding: 2px 5px;
+
+			background: #9e9e9e;
+			border: 5px solid #9e9e9e;
+			border-radius: 5px;
+		}
+
+		.tooltip:hover .tooltip-text {
+			display: block;
+		} 
+
+		.tooltip-text::before {
+			content: "";
+			display: block;
+			
+			border-width: 10px;
+			border-color: transparent transparent #9e9e9e transparent;
+			border-style: solid;
+
+			position: absolute;
+			top: -110%;
+			left: 50%;
+			transform: translate(-50%);
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="tooltip">
+		<p>Hover me</p>
+		<p class="tooltip-text">Tooltip Text</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>18 CSS Navigation Bar</title>
+		<link rel="stylesheet" type="text/css" href="styles/responsiveBar.css">
+		<!-- Font Awesome Icon -->
+		<script src="https://kit.fontawesome.com/a04cacf710.js"></script>
+
+	</head>
+	
+	<body>
+		<ul class="main-sections">
+			<li><a class="home" href="#home">Home</a></li>
+				
+			<li><a class="portfolio" href="#portfolio">Portfolio</a></li>
+			
+			<li><a class="product" href="#product">Product</a></li>
+				
+			<li><a class="about" href="#about">About</a></li>
+				
+			<li><a class="contact" href="#contact">Contact</a></li>
+			<li class="bar-icon">
+					<a class="icon" href="javascript:void(0);" onclick="myFunction();">
+						<i class="fas fa-bars"></i>
+					</a>
+				</li>
+		</ul>
+
+		<script>
+			function myFunction() {
+				var mainBar = document.querySelector('.main-sections');
+
+				if (mainBar.className === 'main-sections') {
+					mainBar.className += ' responsive';
+				} else {
+					mainBar.className = 'main-sections';
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nav bar</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		/* Using float: left*/
+		ul {
+			list-style: none;
+		}
+
+		ul li a {
+			display: block;
+			text-decoration: none;
+			padding: 20px;
+			color: #000;
+		}
+
+		.nav-bar > li {
+			float: left;
+		}
+
+		/*.nav-bar > li > a {
+			display: block;
+			text-decoration: none;
+			padding: 5px;
+			background: tomato;
+			color: #fff;
+		}*/
+
+
+
+		.course-list {
+			position: relative;
+		}
+
+		.course-list .submenu {
+			padding: 0;
+
+			position: absolute;
+			top: 100%;
+
+			display: none;
+		}
+
+		.course-list .submenu li {
+			background: tomato;
+			border-bottom: 1px solid #eee;
+		}
+
+		.course-list:hover > .submenu {
+			display: block;
+		}
+
+/*		.nav-bar {
+			display: flex;
+		}
+
+		.nav-bar li {
+			list-style: none;
+		}
+
+		.nav-bar li a {
+			display: block;
+			text-decoration: none;
+			padding: 5px;
+			background: tomato;
+			color: #fff;
+		}
+
+		.nav-bar li a:hover {
+			background: rgba(0, 0, 0, 0.6);
+		}
+
+		.nav-bar li a:visited {
+			background: rgba(0, 0, 0, 0.6);
+		} 	*/	
+	</style>
+</head>
+<body>
+	<ul class="nav-bar">
+		<li><a href="#2">About</a></li>
+		<li class="course-list" id="course">
+			<a href="#1" id="home">Home</a>
+			<ul class="submenu" id="submenu">
+				<li><a href="#">Java</a></li>
+				<li><a href="#">JavaScript</a></li>
+				<li><a href="#">Node JS</a></li>
+			</ul>
+		</li>
+		<li><a href="#3">Contact</a></li>
+		<li><a href="#4">Me</a></li>
+	</ul>
+
+	<script> 
+		course.addEventListener('mouseenter', onHover);
+
+		function onHover() {
+			setTimeout(() => {
+				submenu.style.display = "block";
+			} , 500)
+		}
+
+		course.addEventListener('mouseleave', onLeave);
+
+		function onLeave() {
+			setTimeout(() => {
+				submenu.style.display = "none";
+			} , 500)
+			
+		}
+
+	</script>	
+
+</body>
+</html>
