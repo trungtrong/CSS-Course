@@ -26,6 +26,7 @@
 		}
 
 		div.box-inset {
+			/* into container, not outside*/
 			/* top - left */
 			box-shadow: inset 5px 5px 10px #999;
 			/* or 
@@ -39,6 +40,19 @@
 
 <body>
 	<!-- 
+		/*
+
+		__|
+
+		=> +x: bottom;
+		   -x: top;
+		   +y: right;
+		   -y: left;
+
+		=> do^. tan ra
+		*/
+
+		
 	box-show: <offset-x> <offset-y> <blur-radius> 
 							<spread: optional> <color>
 					=	X Y spread color
